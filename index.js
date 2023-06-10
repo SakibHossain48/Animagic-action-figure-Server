@@ -54,7 +54,7 @@ async function run() {
         const query = {_id : new ObjectId(id)}
         const result = await toyCollection.findOne(query);
         res.send(result)        
-      } catch (error) {
+      } catch (errror) {
         res.send(error.message)
       }
     })
